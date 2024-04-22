@@ -58,13 +58,14 @@ body{
 }
 
 .cell.x::before,
-.cell.x::after,
+.cell.x::after
+{
+    background-color: red;
+}
 .cell.cell.circle::before{
     background-color: black;
 }
-/* .cell.cell.circle::before{
-    background-color: black;
-} */
+
 
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after,
@@ -124,7 +125,6 @@ body{
     right: 0;
     bottom: 0;
     background-color:rgba(0, 0, 0, .9);
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     color: white;
